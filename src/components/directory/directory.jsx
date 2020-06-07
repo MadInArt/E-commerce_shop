@@ -9,36 +9,36 @@ class Directory extends React.Component  {
 
         this.state = {
              sections : [{
-                  title: 'hats',
-                  imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+                  title: 'Superfoods',
+                  imageUrl: 'https://i.ibb.co/s5FVprF/Superfoods.jpg',
                   id: 1,
-                  linkUrl: 'shop/hats'
+                  linkUrl: 'shop/superfoods'
                 },
                 {
-                  title: 'jackets',
-                  imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+                  title: 'Vegan products',
+                  imageUrl: 'https://i.ibb.co/7jsKsJ7/Vegan-products.jpg',
                   id: 2,
-                  linkUrl: 'shop/jackets'
+                  linkUrl: 'shop/veganproducts'
                 },
                 {
-                  title: 'sneakers',
-                  imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+                  title: 'Plants seeds',
+                  imageUrl: 'https://i.ibb.co/QbJvCvj/Plants-seeds.jpg',
                   id: 3,
-                  linkUrl: 'shop/sneakers'
+                  linkUrl: 'shop/sproutedseeds'
                 },
                 {
-                  title: 'womens',
-                  imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+                  title: 'Vegan cosmetics',
+                  imageUrl: 'https://i.ibb.co/pjNDSg8/Vegan-cosmetics.jpg',
                   size: 'large',
                   id: 4,
-                  linkUrl: 'shop/womens'
+                  linkUrl: 'shop/vegancosmetics'
                 },
                 {
-                  title: 'mens',
-                  imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+                  title: 'Eco accessories',
+                  imageUrl: 'https://i.ibb.co/FHSr0TL/Eco-accessories.jpg',
                   size: 'large',
                   id: 5,
-                  linkUrl: 'shop/mens'
+                  linkUrl: 'shop/ecocessories'
                 }]
         }
     }

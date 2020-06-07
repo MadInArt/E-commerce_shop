@@ -1,8 +1,8 @@
 const SHOP_DATA = [
     {
       id: 1,
-      title: 'Hats',
-      routeName: 'hats',
+      title: 'Superfoods',
+      routeName: 'superfoods',
       items: [
         {
           id: 1,
@@ -62,8 +62,8 @@ const SHOP_DATA = [
     },
     {
       id: 2,
-      title: 'Sneakers',
-      routeName: 'sneakers',
+      title: 'Vegan products',
+      routeName: 'veganproducts',
       items: [
         {
           id: 10,
@@ -117,8 +117,8 @@ const SHOP_DATA = [
     },
     {
       id: 3,
-      title: 'Jackets',
-      routeName: 'jackets',
+      title: 'Sprouted seeds',
+      routeName: 'sproutedseeds',
       items: [
         {
           id: 18,
@@ -154,8 +154,8 @@ const SHOP_DATA = [
     },
     {
       id: 4,
-      title: 'Womens',
-      routeName: 'womens',
+      title: 'Vegan cosmetics',
+      routeName: 'vegancosmetics',
       items: [
         {
           id: 23,
@@ -203,8 +203,8 @@ const SHOP_DATA = [
     },
     {
       id: 5,
-      title: 'Mens',
-      routeName: 'mens',
+      title: 'Eco accessories',
+      routeName: 'ecocessories',
       items: [
         {
           id: 30,
