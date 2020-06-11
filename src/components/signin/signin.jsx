@@ -1,16 +1,18 @@
 import React from "react";
 
-import CustomButton from '../../components/button/button'
-import InputForm from '../../components/inputform/inputform';
+import CustomButton from "../../components/button/button";
+import InputForm from "../../components/inputform/inputform";
 import "./signin.scss";
+
+import { signInWithGoogle } from '../../firebase/firebase.utils';
 
 class SignIn extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      email: "",
-      password: "",
+      email: '',
+      password: '',
     };
   }
 
@@ -18,8 +20,8 @@ class SignIn extends React.Component {
     event.preventDefault();
 
     this.setState({
-      email: "",
-      password: "",
+      email: '',
+      password: '',
     });
   };
   onChangeHadnle = (event) => {
@@ -31,7 +33,7 @@ class SignIn extends React.Component {
 
   render() {
     return (
-      <div className='sign-in-container'>
+      <div className="sign-in-container">
         <h1>I already have an account</h1>
         <span>Sign in with existing email and password</span>
 
@@ -52,8 +54,12 @@ class SignIn extends React.Component {
             onChange={this.onChangeHadnle}
             required
           />
-
-          <CustomButton type="submit">SIGN IN</CustomButton>
+          <div className="buttons">
+            <CustomButton type="submit"> Sign in </CustomButton>
+            <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+              Sign in with Google
+            </CustomButton>
+          </div>
         </form>
       </div>
     );
