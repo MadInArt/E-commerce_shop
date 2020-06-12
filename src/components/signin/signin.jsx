@@ -4,25 +4,33 @@ import CustomButton from "../../components/button/button";
 import InputForm from "../../components/inputform/inputform";
 import "./signin.scss";
 
-import { signInWithGoogle } from '../../firebase/firebase.utils';
+import { signInWithGoogle, auth } from "../../firebase/firebase.utils";
 
 class SignIn extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      email: '',
-      password: '',
+      email: "",
+      password: "",
     };
   }
 
-  onSubmitHandle = (event) => {
+  onSubmitHandle = async event => {
+    const {email, password} = this.state;
     event.preventDefault();
+    try{
+      await auth.signInWithEmailAndPassword(email, password);
 
     this.setState({
-      email: '',
-      password: '',
+      email: "",
+      password: "",
     });
+    }
+    catch(error){
+      console.log(error, 'error during signing in')
+    }
+  
   };
   onChangeHadnle = (event) => {
     const { value, name } = event.target;
@@ -32,6 +40,7 @@ class SignIn extends React.Component {
   };
 
   render() {
+    const { email, password } = this.state;
     return (
       <div className="sign-in-container">
         <h1>I already have an account</h1>
@@ -41,16 +50,16 @@ class SignIn extends React.Component {
           <InputForm
             name="email"
             type="email"
-            label="email"
-            value={this.state.email}
+            label="Email"
+            value={email}
             onChange={this.onChangeHadnle}
             required
           />
           <InputForm
             name="password"
             label="password"
-            type="password"
-            value={this.state.password}
+            type="Password"
+            value={password}
             onChange={this.onChangeHadnle}
             required
           />
