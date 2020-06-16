@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/navbar";
 import HomePage from "./pages/homepage/homepage";
 import ShopPage from "./pages/shop/shop";
 import SignInRegisterPage from "./pages/signinRegisterPage/signInRegisterPage";
+
 import { auth, createUserProfileDoc } from "./firebase/firebase.utils";
 
 import "./App.css";
@@ -47,7 +48,11 @@ class App extends React.Component {
             exact
             path="/signin"
             render={() =>
-              this.props.currentUser ? (<Redirect to="/" />) : (<SignInRegisterPage />)
+              this.props.currentUser ? (
+                <Redirect to="/" />
+              ) : (
+                <SignInRegisterPage />
+              )
             }
           />
         </Switch>
@@ -55,7 +60,7 @@ class App extends React.Component {
     );
   }
 }
-const mapStateToProps = ({user}) => ({
+const mapStateToProps = ({ user }) => ({
   currentUser: user.currentUser,
 });
 
