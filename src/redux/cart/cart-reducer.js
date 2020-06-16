@@ -1,4 +1,5 @@
 import { cartToggleTypes, addItemToCart } from "./cart-constants";
+import { addItemsToCart } from './cart-utils';
 
 const INITIAL_STATE = {
   hidden: true,
@@ -15,7 +16,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
       case addItemToCart.ADD_ITEM_TO_CART:
         return {
             ...state,
-            cartItems: [...state.cartItems, action.payload]
+            cartItems: addItemsToCart(state.cartItems, action.payload)
         };
     default:
       return state;
