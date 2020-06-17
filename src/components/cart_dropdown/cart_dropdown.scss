@@ -11,11 +11,12 @@
     right: 40px;
     z-index: 5;
   
-    .tems {
+    .items {
       height: 240px;
       display: flex;
       flex-direction: column;
       overflow: scroll;
+      overflow-x: hidden;
     }
   
     button {

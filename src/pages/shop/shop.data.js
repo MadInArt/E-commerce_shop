@@ -118,7 +118,7 @@ const SHOP_DATA = [
   {
     id: 3,
     title: 'Plants seeds',
-    routeName: 'plantsseeds',
+    routeName: 'sproutedseeds',
     items: [
       {
         id: 18,
@@ -155,7 +155,7 @@ const SHOP_DATA = [
   {
     id: 4,
     title: 'Vegan cosmetic',
-    routeName: 'vegancosmetic',
+    routeName: 'vegancosmetics',
     items: [
       {
         id: 23,
@@ -204,7 +204,7 @@ const SHOP_DATA = [
   {
     id: 5,
     title: 'Eco accessories',
-    routeName: 'ecoaccessories',
+    routeName: 'ecocessories',
     items: [
       {
         id: 30,
