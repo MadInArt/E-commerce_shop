@@ -7,7 +7,7 @@ import Navbar from "./components/navbar/navbar";
 import HomePage from "./pages/homepage/homepage";
 import ShopPage from "./pages/shop/shop";
 import SignInRegisterPage from "./pages/signinRegisterPage/signInRegisterPage";
-import CheckoutPage from './pages/checkoutPage/checkoutPage'; 
+import CheckoutPage from "./pages/checkoutPage/checkoutPage";
 
 import "./App.css";
 
