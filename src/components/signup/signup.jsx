@@ -4,7 +4,7 @@ import CustomButton from "../../components/button/button";
 import InputForm from "../../components/inputform/inputform";
 import "./signup.scss";
 
-import { auth, createUserProfileDoc } from "../../firebase/firebase.utils";
+import { auth, createUserProfileDocument } from "../../firebase/firebase.utils";
 
 class SignUp extends React.Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class SignUp extends React.Component {
         email,
         password
       );
-      await createUserProfileDoc(user, { displayName });
+      await createUserProfileDocument(user, { displayName });
       this.setState({
         displayName: "",
         email: "",
