@@ -1,0 +1,69 @@
+                    ___________Advance-fee scams___________
+
+An advance-fee scam is a form of fraud and one of the most common types of confidence tricks. 
+The scam typically involves promising the victim a significant share of a large sum of money,
+in return for a small up-front payment, which the fraudster requires in order to obtain the large sum.
+If a victim makes the payment,
+the fraudster either invents a series of further fees for the victim or simply disappears
+
+examples:
+Irreversible money transfers, Web-based email, SMS messages, Invitation to visit the country, Employment scams,Lottery scam,Online sales and rentals
+
+solution:
+Dont answer them and keep in mind, nobody will five you nothing for free.
+
+                    ___________Phishing emails___________
+
+Phishing is one of the most common methods of cyber crime, 
+but despite how much we think we know about scam emails, people still frequently fall victim.
+
+5 ways to detect a phishing email:
+
+1. The message is sent from a public email domain -> No legitimate organisation will send emails from an address that ends ‘@gmail.com’. Not even Google. 
+ Look at the email address, not just the sender.
+
+ 2. The domain name is misspelt
+
+ 3. The email is poorly written with a grammar mistakes and misspeling
+
+ 4. It includes suspicious attachments or links
+
+5. The message creates a sense of urgency. The business depends on you
+
+                    ___________MALSPAM___________
+
+Malspam, short for malware spam or malicious spam, is spam email that delivers malware.
+
+1. Email spam: Your garden-variety spam. It clogs up your inbox and distracts you from the emails you actually want to read. Rest assured, it’s all extremely ignorable.
+2 SEO spam: Also known as spamdexing, this is the abuse of search engine optimization (SEO) methods to improve search rankings for the spammer’s website.
+3 Social networking spam
+4. Mobile spam:
+5. Messaging spam: Like email spam, but quicker. Spammers blast their messages out on instant messaging platforms including WhatsApp, Skype, and Snapchat.
+
+How to recognize spam: the most common types of spam emails out there.
+
+1. Health and medical services:
+ Miracle cures, weight-loss shortcuts, 
+dietary supplements of dubious repute, hair loss therapies, anti-aging solutions, alternative medicines — all of these and more are frequently hawked by spammers.
+
+2. Dating & adult content: 
+This category also covers a lot of ground, ranging from online dating services and matchmaking agencies to adult websites and bedroom performance enhancements.
+
+3.Computers, internet, and tech:
+ Spammers try to take advantage of how many people aren’t computer experts.
+ Don’t let them fool you with software or hardware offers, internet or mobile services, or general electronics advertisements.
+ 
+ 4.Service enrollment: 
+ These involve the spammer trying to convince you to enroll in a long-term service. Educational programs and various types of insurance are common choices.
+
+ 5. Financial services and awards:
+  Spam of this type promises to help you alleviate monetary woes with low-interest loans, debt assistance, or outright cash prizes. Don’t buy in!
+  
+
+  How to prevent spam:
+   
+   1.Use your email client’s spam-reporting function. 
+   2.Conversely, tell your email client which emails are not spam.
+   3.Don’t publish your contact information.
+   4. If someone you know has sent you spam, tell them, maybe they has been hacked
+   5. If you manage a website, use current software and security measures.
