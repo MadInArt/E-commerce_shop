@@ -18,3 +18,7 @@ export const decreaseItemQuantity = (item) => ({
   type: cartActions.DECREASE_ITEM_QUANTITY,
   payload: item,
 });
+export const clearCart = () => ({
+  type: cartActions.CLEAR_CART,
+ 
+});

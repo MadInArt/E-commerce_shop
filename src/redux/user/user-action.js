@@ -16,3 +16,16 @@ export const signInFailure = (error) => ({
   type: userActions.SIGN_IN_FAILURE,
   payload: error,
 });
+export const checkUserSession = () => ({
+  type: userActions.CHECK_USER_SESSION,
+});
+export const signOutStart = () => ({
+  type: userActions.SIGN_OUT_START,
+});
+export const signOutSuccess = () => ({
+  type: userActions.SIGN_OUT_SUCCESS,
+});
+export const signOutFailure = (error) => ({
+  type: userActions.SIGN_OUT_FAILURE,
+  payload: error,
+});
