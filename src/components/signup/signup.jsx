@@ -1,11 +1,10 @@
 import React from "react";
-
+import { connect } from "react-redux";
 import CustomButton from "../../components/button/button";
 import InputForm from "../../components/inputform/inputform";
 import "./signup.scss";
 
-import { auth, createUserProfileDocument } from "../../firebase/firebase.utils";
-
+import { signUpStart } from "../../redux/user/user-action";
 class SignUp extends React.Component {
   constructor(props) {
     super(props);
@@ -18,7 +17,8 @@ class SignUp extends React.Component {
     };
   }
 
-  onSubmitHandle = async event => {
+  onSubmitHandle = async (event) => {
+    const { signUpStart } = this.props;
     event.preventDefault();
 
     const { displayName, email, password, confirmPassword } = this.state;
@@ -27,22 +27,9 @@ class SignUp extends React.Component {
       alert("Your passwords don't match");
       return;
     }
-    try {
-      const { user } = await auth.createUserWithEmailAndPassword(
-        email,
-        password
-      );
-      await createUserProfileDocument(user, { displayName });
-      this.setState({
-        displayName: "",
-        email: "",
-        password: "",
-        confirmPassword: "",
-      });
-    } catch (error) {
-      console.log(error, "error during creating new account");
-    }
+    signUpStart({ displayName, email, password });
   };
+
   onChangeHadnle = (event) => {
     const { value, name } = event.target;
     this.setState({
@@ -52,6 +39,7 @@ class SignUp extends React.Component {
 
   render() {
     const { displayName, email, password, confirmPassword } = this.state;
+
     return (
       <div className="sign-up-container">
         <h1>I don't have an account</h1>
@@ -95,4 +83,8 @@ class SignUp extends React.Component {
     );
   }
 }
-export default SignUp;
+const mapDispatchToProps = (dispatch) => ({
+  signUpStart: (userCredentials) => dispatch(signUpStart(userCredentials)),
+});
+
+export default connect(null, mapDispatchToProps)(SignUp);
