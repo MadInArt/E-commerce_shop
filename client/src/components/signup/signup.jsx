@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import CustomButton from "../../components/button/button";
 import InputForm from "../../components/inputform/inputform";
-import "./signup.scss";
 
 import { signUpStart } from "../../redux/user/user-action";
+import { SignUpContainer, SignUpTitle } from "./signup.styles";
 
 const SignUp = ({ signUpStart }) => {
   const [userCredentials, setuserCredentials] = useState({
@@ -34,8 +34,8 @@ const SignUp = ({ signUpStart }) => {
   };
 
   return (
-    <div className="sign-up-container">
-      <h1>I don't have an account</h1>
+    <SignUpContainer>
+      <SignUpTitle>I don't have an account</SignUpTitle>
       <span>Sign up with new email and password</span>
 
       <form onSubmit={onSubmitHandle}>
@@ -72,7 +72,7 @@ const SignUp = ({ signUpStart }) => {
         />
         <CustomButton type="submit"> Sign up </CustomButton>
       </form>
-    </div>
+    </SignUpContainer>
   );
 };
 const mapDispatchToProps = (dispatch) => ({

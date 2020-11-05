@@ -8,7 +8,7 @@ export const SignInContainer = styled.div`
 export const SignInTitle = styled.span`
   margin: 10px 0;
 `;
-export const SignInButtons = styled.div`
+export const ButtonsBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
 `;

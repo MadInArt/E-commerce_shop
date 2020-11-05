@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
@@ -10,29 +9,34 @@ import { ReactComponent as Logo } from "../../assets/logo.svg";
 import CartItem from "../cart-icon/cart-icon";
 import CartDropdown from "../cart_dropdown/cart_dropdown";
 
-import "./navbar.scss";
+import {
+  HeaderContainer,
+  LogoContainer,
+  OptionsContainer,
+  OptionLink,
+} from "./navbar.styles";
 
 const Navbar = ({ currentUser, hidden, signOutStart }) => (
-  <div className="header">
-    <Link to="/" className="logo-container">
+  <HeaderContainer>
+    <LogoContainer to="/">
       <Logo className="logo" />
-    </Link>
-    <div className="links">
-      <Link to="/shop">SHOP</Link>
-      <Link to="/contact">CONTACT</Link>
+    </LogoContainer>
+    <OptionsContainer>
+      <OptionLink to="/shop">SHOP</OptionLink>
+      <OptionLink to="/contact">CONTACT</OptionLink>
       {currentUser ? (
         <div className="links" onClick={signOutStart}>
           SIGN OUT
         </div>
       ) : (
-        <Link className="links" to="/signin">
+        <OptionLink to="/signin">
           SIGN IN
-        </Link>
+        </OptionLink>
       )}
       <CartItem />
-    </div>
+    </OptionsContainer>
     {hidden ? null : <CartDropdown />}
-  </div>
+  </HeaderContainer>
 );
 
 const mapStateToProps = createStructuredSelector({

@@ -42,3 +42,7 @@ app.post("/payment", (req, res) => {
     }
   });
 });
+/*FIXME:
+        1) in case of logout impossibility to make transfer 
+        2) text notifications about errors.
+*/  
