@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render CheckoutPage component 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.div>
+      <span>
+        Product
+      </span>
+    </styled.div>
+    <styled.div>
+      <span>
+        Name
+      </span>
+    </styled.div>
+    <styled.div>
+      <span>
+        Quantity
+      </span>
+    </styled.div>
+    <styled.div>
+      <span>
+        Price
+      </span>
+    </styled.div>
+    <styled.div>
+      <span>
+        Remove
+      </span>
+    </styled.div>
+  </styled.div>
+  <styled.div>
+    Total: 
+    100
+    zł
+  </styled.div>
+  <styled.div>
+    <p>
+      FOR USE PAYMENTS NEXT TEST CARD:
+    </p>
+    <p>
+      4242 4242 4242 4242 exp: 09/25 CVC:111 
+    </p>
+  </styled.div>
+  <TakeMoney
+    price={100}
+  />
+</styled.div>
+`;

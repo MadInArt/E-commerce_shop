@@ -31,3 +31,5 @@ export const CartItemsContainer = styled.div`
   overflow: scroll;
   overflow-x: hidden;
 `;
+CartDropdownButton.displayName = "CartDropdownButton";
+EmptyMessageContainer.displayName = "EmptyMessageContainer";

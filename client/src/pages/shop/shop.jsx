@@ -13,7 +13,7 @@ const CollectionPageContainer = lazy(() =>
   import("../category/category.container")
 );
 
-const ShopPage = ({ match, fetchCollectionsStart }) => {
+export const ShopPage = ({ match, fetchCollectionsStart }) => {
   useEffect(() => {
     fetchCollectionsStart();
   }, [fetchCollectionsStart]);

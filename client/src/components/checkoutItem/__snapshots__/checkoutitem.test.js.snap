@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`СheclkoutItem tests expect CartItem renders properly 1`] = `
+<styled.div>
+  <styled.div>
+    <img
+      alt="item"
+      src="www.testImage.com"
+    />
+  </styled.div>
+  <styled.span>
+    CoolItem
+  </styled.span>
+  <QuantityContainer>
+    <div
+      onClick={[Function]}
+    >
+      ❬
+    </div>
+    <span>
+      2
+    </span>
+    <div
+      onClick={[Function]}
+    >
+       ❭
+    </div>
+  </QuantityContainer>
+  <styled.span>
+    22
+    zł
+  </styled.span>
+  <RemoveButtonContainer
+    onClick={[Function]}
+  >
+    ✕
+  </RemoveButtonContainer>
+</styled.div>
+`;

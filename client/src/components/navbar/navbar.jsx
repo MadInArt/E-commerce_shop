@@ -16,7 +16,7 @@ import {
   OptionLink,
 } from "./navbar.styles";
 
-const Navbar = ({ currentUser, hidden, signOutStart }) => (
+export const Navbar = ({ currentUser, hidden, signOutStart }) => (
   <HeaderContainer>
     <LogoContainer to="/">
       <Logo className="logo" />

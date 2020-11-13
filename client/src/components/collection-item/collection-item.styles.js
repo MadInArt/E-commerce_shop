@@ -80,3 +80,6 @@ export const PriceContainer = styled.span`
 `;
 
 PriceContainer.displayName = "PriceContainer";
+AddButton.displayName = 'AddButton';
+BackgroundImage.displayName = "BackgroundImage";
+NameContainer.displayName = 'NameContainer';

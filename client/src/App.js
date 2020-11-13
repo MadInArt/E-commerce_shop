@@ -6,6 +6,7 @@ import { createStructuredSelector } from "reselect";
 import Navbar from "./components/navbar/navbar";
 import LoadingSpinner from "./components/loading_spinner/loading_spinner";
 import ErrorBoundary from "./components/error_boundary/error_boundary";
+import { ToTopButton } from "./components/toTopButton/toTopButton";
 
 import { GlobalStyle } from "./styles.global";
 import { selectCurrentUser } from "./redux/user/user-selector";
@@ -29,7 +30,8 @@ const App = ({ checkUserSession, currentUser }) => {
       <Navbar />
       <Switch>
         <ErrorBoundary>
-          <Suspense fallback={<LoadingSpinner/>}>
+          <Suspense fallback={<LoadingSpinner />}>
+            <ToTopButton/>
             <Route exact path="/" component={HomePage} />
             <Route path="/shop" component={ShopPage} />
             <Route exact path="/checkout" component={CheckoutPage} />

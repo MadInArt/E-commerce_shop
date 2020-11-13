@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem tests expect CartItem renders properly 1`] = `
+<styled.div>
+  <styled.img
+    alt="item"
+    src="www.testImage.com"
+  />
+  <styled.div>
+    <span>
+      CoolItem
+    </span>
+    <span>
+      2 x 22zł
+    </span>
+  </styled.div>
+</styled.div>
+`;

@@ -43,3 +43,5 @@ export const RemoveButtonContainer = styled.div`
   padding-left: 12px;
   cursor: pointer;
 `;
+RemoveButtonContainer.displayName = 'RemoveButtonContainer'
+QuantityContainer.displayName = 'QuantityContainer'

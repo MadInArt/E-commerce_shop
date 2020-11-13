@@ -5,10 +5,10 @@ import CollectionItem from "../collection-item/collection-item";
 import {
   CollectionPreviewContainer,
   TitleContainer,
-  PreviewContainer
-} from './collection-preview.styles';
+  PreviewContainer,
+} from "./collection-preview.styles";
 
-const CollectionPreview = ({ title, items }) => (
+export const CollectionPreview = ({ title, items }) => (
   <CollectionPreviewContainer>
     <TitleContainer>{title.toUpperCase()}</TitleContainer>
     <PreviewContainer>
