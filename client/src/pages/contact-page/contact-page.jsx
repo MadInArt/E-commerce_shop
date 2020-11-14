@@ -1,5 +1,6 @@
 import React, { useState, memo } from "react";
 import { firestore } from "../../firebase/firebase.utils";
+import Swal from "sweetalert2";
 import {
   MainContainer,
   ContactData,
@@ -24,21 +25,33 @@ const ContactPage = memo(() => {
     e.preventDefault();
     setLoader(true);
 
-    firestore
-      .collection("contactPage")
-      .add({
-        name: name,
-        email: email,
-        message: message,
-      })
-      .then(() => {
-        setLoader(false);
-        alert("Your message has been submitted👍");
-      })
-      .catch((error) => {
-        alert(error.message);
-        setLoader(false);
+    if (email.length > 4 && message.length > 5) {
+      firestore
+        .collection("contactPage")
+        .add({
+          name: name,
+          email: email,
+          message: message,
+        })
+        .then(() => {
+          setLoader(false);
+          Swal.fire({
+            text: "Your message has been sent",
+            icon: "success",
+            confirmButtonColor: "black",
+          });
+        })
+        .catch((error) => {
+          alert(error.message);
+          setLoader(false);
+        });
+    } else {
+      Swal.fire({
+        text: "Provide at least email and your message",
+        icon: "error",
+        confirmButtonColor: "black",
       });
+    }
 
     setName("");
     setEmail("");
@@ -50,7 +63,7 @@ const ContactPage = memo(() => {
       <ContactData>
         <div>
           <HeaderContainer>Contact info</HeaderContainer>
-          <p>phone: (+48) 111-111-111</p>
+          <p>Our contact phone: (+48) 111-111-111</p>
           <p>Hours of work: 9:00 - 17:00 from Monday till Friday</p>
           <p>Greenland Ltd.</p>
           <p>Warsaw, Poland</p>
@@ -76,6 +89,7 @@ const ContactPage = memo(() => {
           />
           <FormInputContainer
             placeholder="Email"
+            type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />

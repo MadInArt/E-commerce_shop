@@ -6,6 +6,7 @@ export const CollectionItemContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 350px;
+  padding: 5px;
   align-items: center;
   position: relative;
   &:hover {
@@ -80,6 +81,6 @@ export const PriceContainer = styled.span`
 `;
 
 PriceContainer.displayName = "PriceContainer";
-AddButton.displayName = 'AddButton';
+AddButton.displayName = "AddButton";
 BackgroundImage.displayName = "BackgroundImage";
-NameContainer.displayName = 'NameContainer';
+NameContainer.displayName = "NameContainer";

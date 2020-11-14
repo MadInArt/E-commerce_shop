@@ -37,7 +37,7 @@ export const FormContainer = styled.form`
 export const FormInputContainer = styled.input`
   background-color: white;
   color: ${subColor};
-  font-size: 18px;
+  font-size: 15px;
   padding: 10px 10px 10px 5px;
   display: block;
   width: 70%;
