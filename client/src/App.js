@@ -14,6 +14,7 @@ import { checkUserSession } from "./redux/user/user-action";
 
 const HomePage = lazy(() => import("./pages/homepage/homepage"));
 const ShopPage = lazy(() => import("./pages/shop/shop"));
+const ContactPage = lazy(() => import("./pages/contact-page/contact-page"));
 const SignInRegisterPage = lazy(() =>
   import("./pages/signinRegisterPage/signInRegisterPage")
 );
@@ -31,9 +32,10 @@ const App = ({ checkUserSession, currentUser }) => {
       <Switch>
         <ErrorBoundary>
           <Suspense fallback={<LoadingSpinner />}>
-            <ToTopButton/>
+            <ToTopButton />
             <Route exact path="/" component={HomePage} />
             <Route path="/shop" component={ShopPage} />
+            <Route path="/contact" component={ContactPage} />
             <Route exact path="/checkout" component={CheckoutPage} />
             <Route
               exact

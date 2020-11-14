@@ -96,8 +96,8 @@ export const getCurrentUser = () => {
 };
 
 export const auth = firebase.auth();
-export const firestore = firebase.firestore();
-
+const firestore = firebase.firestore();
+export { firestore };
 export const googleProvider = new firebase.auth.GoogleAuthProvider();
 googleProvider.setCustomParameters({ prompt: "select_account" });
 export const signInWithGoogle = () => auth.signInWithPopup(googleProvider);

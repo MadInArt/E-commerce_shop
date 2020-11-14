@@ -48,8 +48,5 @@ app.post("/payment", (req, res) => {
   });
 });
 /* TODO:
-        1) in case of logout impossibility to make transfer 
         2) text notifications about errors.
-        3) Add Contact Page.
-        3) Add to top button.
 */
