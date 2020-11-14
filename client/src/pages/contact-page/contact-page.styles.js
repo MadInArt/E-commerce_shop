@@ -28,17 +28,13 @@ export const EmailFields = styled.div`
   flex: 50%;
   width: 70%;
   text-align: center;
-  justify-content: center;
 `;
 
 export const FormContainer = styled.form`
-  position: relative;
   padding-left: 25%;
 `;
 
 export const FormInputContainer = styled.input`
-  background: none;
-  justify-content: center;
   background-color: white;
   color: ${subColor};
   font-size: 18px;
@@ -54,31 +50,18 @@ export const FormInputContainer = styled.input`
   }
 `;
 
-export const FormInputLabel = styled.label`
-  color: ${subColor};
-  font-size: 16px;
-  font-weight: normal;
-  position: absolute;
-  pointer-events: none;
-  left: 5px;
-  top: 10px;
-  transition: 300ms ease all;
-
-`;
-
 export const TextAreaContainer = styled.textarea`
   width: 70%;
-  height: 150px;
+  height: 120px;
   padding: 12px 20px;
-  box-sizing: border-box;
   display: block;
   border: 1px solid ${subColor};
-  border-radius: 4px;
+  border-radius: 3px;
   resize: none;
 `;
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
-  width:70%;
-  margin-top:10px;
+  width: 70%;
+  margin-top: 10px;
 `;
