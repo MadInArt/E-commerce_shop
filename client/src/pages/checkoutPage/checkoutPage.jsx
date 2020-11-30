@@ -14,10 +14,10 @@ import {
   CheckoutHeaderContainer,
   HeaderBlockContainer,
   TotalContainer,
-  WarningContainer
-} from './checkoutPage.styles';
+  WarningContainer,
+} from "./checkoutPage.styles";
 
-export const CheckoutPage = ({ cartItems, total }) => (
+export const CheckoutPage = ({ cartItems, total, history }) => (
   <CheckoutPageContainer>
     <CheckoutHeaderContainer>
       <HeaderBlockContainer>
@@ -41,11 +41,10 @@ export const CheckoutPage = ({ cartItems, total }) => (
     ))}
     <TotalContainer>Total: {total}zł</TotalContainer>
     <WarningContainer>
-      <p>FOR USE PAYMENTS NEXT TEST CARD:</p>
+      <p>FOR PAYMENTS USE NEXT TEST CARD:</p>
       <p>4242 4242 4242 4242 exp: 09/25 CVC:111 </p>
     </WarningContainer>
-
-    <TakeMoney price={total} />
+    {total === 0 ? null : <TakeMoney price={total} history={history} />}
   </CheckoutPageContainer>
 );
 const mapStateToProps = createStructuredSelector({

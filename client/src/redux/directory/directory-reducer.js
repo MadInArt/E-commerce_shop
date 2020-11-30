@@ -7,10 +7,10 @@ const INITIAL_STATE = {
       linkUrl: "shop/superfoods",
     },
     {
-      title:  "Products",
+      title: "Products",
       imageUrl: "https://i.ibb.co/7jsKsJ7/Vegan-products.jpg",
       id: 2,
-      linkUrl: "shop/products",
+      linkUrl: "shop/producdats",
     },
     {
       title: "Seeds",
