@@ -22,6 +22,7 @@ export const Navbar = ({ currentUser, hidden, signOutStart }) => (
       <Logo className="logo" />
     </LogoContainer>
     <OptionsContainer>
+      <OptionLink to="/">HOME</OptionLink>
       <OptionLink to="/shop">SHOP</OptionLink>
       <OptionLink to="/contact">CONTACT</OptionLink>
       {currentUser ? (
@@ -29,9 +30,7 @@ export const Navbar = ({ currentUser, hidden, signOutStart }) => (
           SIGN OUT
         </div>
       ) : (
-        <OptionLink to="/signin">
-          SIGN IN
-        </OptionLink>
+        <OptionLink to="/signin">SIGN IN</OptionLink>
       )}
       <CartItem />
     </OptionsContainer>
