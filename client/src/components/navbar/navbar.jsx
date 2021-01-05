@@ -6,7 +6,7 @@ import { signOutStart } from "../../redux/user/user-action";
 import { selectCartHidden } from "../../redux/cart/cart-selector";
 import { selectCurrentUser } from "../../redux/user/user-selector";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
-import CartItem from "../cart-icon/cart-icon";
+import CartIcon from "../cart-icon/cart-icon";
 import CartDropdown from "../cart_dropdown/cart_dropdown";
 
 import {
@@ -32,7 +32,7 @@ export const Navbar = ({ currentUser, hidden, signOutStart }) => (
       ) : (
         <OptionLink to="/signin">SIGN IN</OptionLink>
       )}
-      <CartItem />
+      <CartIcon />
     </OptionsContainer>
     {hidden ? null : <CartDropdown />}
   </HeaderContainer>

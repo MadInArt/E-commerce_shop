@@ -47,6 +47,3 @@ app.post("/payment", (req, res) => {
     }
   });
 });
-/* TODO:
-        2) text notifications about errors.
-*/
