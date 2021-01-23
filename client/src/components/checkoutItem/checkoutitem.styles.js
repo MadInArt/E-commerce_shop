@@ -17,8 +17,14 @@ export const ImageContainer = styled.div`
   width: 23%;
   padding-right: 15px;
   img {
-    width: 100%;
-    height: 100%;
+    width: 168px;
+    height: 168px;
+  }
+  @media screen and (max-width: 800px) {
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 `;
 
@@ -43,5 +49,5 @@ export const RemoveButtonContainer = styled.div`
   padding-left: 12px;
   cursor: pointer;
 `;
-RemoveButtonContainer.displayName = 'RemoveButtonContainer'
-QuantityContainer.displayName = 'QuantityContainer'
+RemoveButtonContainer.displayName = "RemoveButtonContainer";
+QuantityContainer.displayName = "QuantityContainer";

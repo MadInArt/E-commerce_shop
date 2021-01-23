@@ -20,6 +20,7 @@ export const CollectionItemContainer = styled.div`
   }
   @media screen and (max-width: 800px) {
     width: 40vw;
+    margin-bottom: 20px;
     &:hover {
       .image {
         opacity: unset;
