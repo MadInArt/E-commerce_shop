@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import { fetchCollectionsStart } from "../../redux/shopPage/shopPage-action.js";
 
 import LoadingSpinner from "../../components/loading_spinner/loading_spinner";
+import DocumentTitle from "react-document-title";
 
 const CollectionsOverviewContainer = lazy(() =>
   import("../../components/collection-overview/collection-overview.container")
@@ -18,6 +19,7 @@ export const ShopPage = ({ match, fetchCollectionsStart }) => {
     fetchCollectionsStart();
   }, [fetchCollectionsStart]);
   return (
+    <DocumentTitle title="GreenLand | Shop">
     <div className="shop-page">
       <Suspense fallback={<LoadingSpinner/>}>
         <Route
@@ -31,6 +33,7 @@ export const ShopPage = ({ match, fetchCollectionsStart }) => {
         />
       </Suspense>
     </div>
+    </DocumentTitle>
   );
 };
 

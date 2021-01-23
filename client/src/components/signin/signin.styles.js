@@ -14,6 +14,7 @@ export const SignInTitle = styled.span`
 `;
 export const ButtonsBarContainer = styled.div`
   display: flex;
+  justify-content: space-between;
   @media screen and (max-width: 800px) {
     * {
       margin: 10px;

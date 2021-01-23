@@ -14,6 +14,7 @@ import {
 export const CollectionPage = ({ collection }) => {
   const { title, items } = collection;
   return (
+
     <CollectionPageContainer>
       <CollectionTitle>{title}</CollectionTitle>
       <CollectionItemsContainer>

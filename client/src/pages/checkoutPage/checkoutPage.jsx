@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
+import DocumentTitle from "react-document-title";
 import {
   selectCartItems,
   selectCartTotalSum,
@@ -18,6 +19,7 @@ import {
 } from "./checkoutPage.styles";
 
 export const CheckoutPage = ({ cartItems, total, history }) => (
+  <DocumentTitle title="GreenLand | Checkout">
   <CheckoutPageContainer>
     <CheckoutHeaderContainer>
       <HeaderBlockContainer>
@@ -46,6 +48,7 @@ export const CheckoutPage = ({ cartItems, total, history }) => (
     </WarningContainer>
     {total === 0 ? null : <TakeMoney price={total} history={history} />}
   </CheckoutPageContainer>
+  </DocumentTitle>
 );
 const mapStateToProps = createStructuredSelector({
   cartItems: selectCartItems,

@@ -1,6 +1,7 @@
 import React, { useState, memo } from "react";
 import { firestore } from "../../firebase/firebase.utils";
 import Swal from "sweetalert2";
+import DocumentTitle from "react-document-title";
 import {
   MainContainer,
   ContactData,
@@ -59,6 +60,7 @@ const ContactPage = memo(() => {
   };
 
   return (
+    <DocumentTitle title="GreenLand | Contact">
     <MainContainer>
       <ContactData>
         <div>
@@ -104,6 +106,7 @@ const ContactPage = memo(() => {
         </FormContainer>
       </EmailFields>
     </MainContainer>
+    </DocumentTitle>
   );
 });
 

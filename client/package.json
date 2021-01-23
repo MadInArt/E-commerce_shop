@@ -17,6 +17,7 @@
     "react-alert": "^7.0.2",
     "react-alert-template-basic": "^1.0.0",
     "react-animated-router": "^0.2.4",
+    "react-document-title": "^2.0.3",
     "react-dom": "^16.14.0",
     "react-instantsearch-dom": "^6.8.2",
     "react-redux": "^7.2.1",
