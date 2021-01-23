@@ -12,11 +12,6 @@ export const CollectionPreview = ({ title, items, searchResult }) => {
     <CollectionPreviewContainer>
       <TitleContainer>{title.toUpperCase()}</TitleContainer>
       <PreviewContainer>
-        {/* searchResult && searchResult.length > 0
-          ? searchResult.reduce((item) => (
-              <CollectionItem key={item.id} item={item} />
-            ))
- :  */}
         {items
           .filter((item, idx) => idx < 4)
           .map((item) => (

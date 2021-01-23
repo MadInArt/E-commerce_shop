@@ -14,7 +14,6 @@ export const CollectionOverview = ({
       {collections.map(({ id, ...otheCollectionsProps }) => (
         <CollectionPreview
           key={id}
-          // searchResult={searchResult}
           {...otheCollectionsProps}
         />
       ))}
