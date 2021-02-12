@@ -1,6 +1,6 @@
 # React  vegan e-commerce
 
-E-commerce responsive web-application.
+E-commerce responsive web-application has 2 versions (check the branches, 2nd verison is placed in serverless-paypal-googlepay. The difference is payments methods.
 
 ### This web-application has both Front-end and simple Back-end parts.
 - For front-end I've used React+Redux, Cloud Firestore as a remote database, Stripe API for providing payments.
