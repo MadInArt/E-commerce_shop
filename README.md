@@ -1,5 +1,6 @@
 # React  vegan e-commerce
-Repository created for software design and implementation project. 
+
+E-commerce responsive web-application.
 
 ### This web-application has both Front-end and simple Back-end parts.
 - For front-end I've used React+Redux, Cloud Firestore as a remote database, Stripe API for providing payments.
